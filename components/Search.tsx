@@ -2,9 +2,9 @@ export const Search = () => {
   return (
     <div
       id="search"
-      className="bg-black-90 shadow-lg py-[64px] md:py-[120px] px-[32px] scroll-mt-[67px]"
+      className="bg-black-90 text-white shadow-lg py-[64px] md:py-[120px] px-[32px] scroll-mt-[67px] flex-col justify-center h-[600px]"
     >
-      Search
+      <h2 className="font-bold text-[32px] text-center">SEARCH</h2>
     </div>
   );
 };
