@@ -10,7 +10,12 @@ export const Footer = () => {
                     <Image src="/rhace-logo-light.svg" alt="logo-light" width="116" height="16" priority={true} />
                 </Link>
             </div>
-            <span className="text-small">© 2023 fuadscodes</span>
+            <span className="text-small">
+              <span>© 2023 </span>
+              <Link href="https://github.com/fuadscodes" className="cursor-pointer">
+                fuadscodes
+              </Link>
+            </span>
         </div>
     </footer>
   )
