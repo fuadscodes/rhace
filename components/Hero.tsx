@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const Hero = () => {
   return (
-    <section className="max-container padding-container flex-co xl:flex items-center xl:h-[calc(100vh-67px)]">
+    <section id="hero" className="max-container padding-container flex-co xl:flex items-center xl:h-[calc(100vh-67px)] scroll-mt-[67px]">
       <Image 
         priority={true} 
         src="/hero-image.avif" 
