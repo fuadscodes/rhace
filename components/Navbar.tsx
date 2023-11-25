@@ -13,6 +13,7 @@ export const Navbar = () => {
                 <Link className="transition-all hover:text-black-90 font-medium" href={link.href} key={link.key}>{link.label}</Link>
             ))}
         </ul>
+        <Image src="menu.svg" alt="menu" width="24" height="24" className="inline-block cursor-pointer md:hidden"/>
     </nav>
   )
 }
