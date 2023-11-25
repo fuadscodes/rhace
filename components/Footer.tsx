@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="bg-black-90 text-white px-[40px] py-[20px] flex justify-center items-center">
       <div className="flex-col justify-center">
         <div className="flex justify-center mb-[4px]">
-          <Link href="/">
+          <Link href="#hero">
             <Image
               src="/rhace-logo-light.svg"
               alt="logo-light"

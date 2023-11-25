@@ -5,7 +5,7 @@ import { NAV_LINKS } from "../constants";
 export const Navbar = () => {
   return (
     <nav className="flex justify-between items-center sticky top-0 h-[67px] px-[40px] backdrop-blur-[10px] duration-500 shadow-lg text-bold">
-      <Link href="/">
+      <Link href="#hero">
         <Image
           src="/rhace-logo-dark.svg"
           alt="logo-dark"
