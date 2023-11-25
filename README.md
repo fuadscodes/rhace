@@ -1,3 +1,5 @@
+![rhace-logo-light](https://github.com/fuadscodes/rhace/assets/60370584/7b1a0c54-4db7-47ae-be8a-f8dc6b1783da)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started 
