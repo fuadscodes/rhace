@@ -1,5 +1,3 @@
 export const GetApp = () => {
-  return (
-    <div>GetApp</div>
-  )
-}
+  return <div>GetApp</div>;
+};
