@@ -1,7 +1,10 @@
+import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
 
 export const Footer = () => {
+  const year = moment().format("YYYY");
+
   return (
     <footer className="bg-black-90 text-white px-[40px] py-[20px] flex justify-center items-center">
       <div className="flex-col justify-center">
@@ -17,7 +20,7 @@ export const Footer = () => {
           </Link>
         </div>
         <span className="text-small">
-          <span>© 2023 </span>
+          <span>© {year} </span>
           <Link href="https://github.com/fuadscodes" className="cursor-pointer">
             fuadscodes
           </Link>
