@@ -19,7 +19,7 @@ export const Footer = () => {
             />
           </Link>
         </div>
-        <span className="text-small">
+        <span className="text-[14px] md:text-small">
           <span>© {year} </span>
           <Link href="https://github.com/fuadscodes" className="cursor-pointer">
             fuadscodes
