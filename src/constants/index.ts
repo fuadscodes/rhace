@@ -1,0 +1,1 @@
+export const MOTORCYCLE_API = "https://api.api-ninjas.com/v1/motorcycles"

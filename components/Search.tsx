@@ -1,4 +1,14 @@
+"use client";
+import React, { useState } from "react";
+import useGetMotorcycle from "../src/util/useGetMotorcycle";
+
 export const Search = () => {
+  const { motorcycle, loading, fetchData } = useGetMotorcycle();
+
+  const handleOnClick = () => {
+    fetchData();
+  };
+
   return (
     <div
       id="search"
@@ -7,6 +17,20 @@ export const Search = () => {
       <h2 className="font-bold text-[24px] md:text-[32px] text-center">
         SEARCH
       </h2>
+
+      {!motorcycle && !loading && (
+        <div
+          className="cursor-pointer"
+          onClick={() => {
+            handleOnClick();
+          }}
+        >
+          Search
+        </div>
+      )}
+      {loading && <div>Loading...</div>}
+      <div className="w-full flex flex-col items-center justify-center"></div>
+      <div>{motorcycle?.make}</div>
     </div>
   );
 };
