@@ -21,7 +21,11 @@ export const Footer = () => {
         </div>
         <span className="text-[14px] md:text-small">
           <span>© {year} </span>
-          <Link href="https://github.com/fuadscodes" className="cursor-pointer">
+          <Link
+            href="https://github.com/fuadscodes"
+            target="_blank"
+            className="cursor-pointer"
+          >
             fuadscodes
           </Link>
         </span>
