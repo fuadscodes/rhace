@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="max-container padding-container flex-co xl:flex items-center xl:h-[calc(100vh-67px)] scroll-mt-[67px]"
+      className="max-container padding-container flex-co xl:flex items-center xl:h-[calc(100vh-72px)] scroll-mt-[72px]"
     >
       <Image
         priority={true}
