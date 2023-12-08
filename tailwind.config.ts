@@ -15,7 +15,7 @@ module.exports = {
           30: '#7B7B7B',
         },
         teal: {
-          50: '#4C7E82',
+          50: '#006666',
         }
       },
       backgroundImage: {
