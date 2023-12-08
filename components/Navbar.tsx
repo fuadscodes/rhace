@@ -14,7 +14,7 @@ export const Navbar = () => {
           priority={true}
         />
       </Link>
-      <ul className="hidden h-full gap-12 md:flex items-center cursor-pointer regular-16 text-gray-30">
+      <ul className="hidden h-full gap-12 md:flex items-center cursor-pointer regular-16 text-black-90">
         {NAV_LINKS.map((link) => (
           <Link
             className="transition-all hover:text-black-90 font-medium"
