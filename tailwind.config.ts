@@ -14,9 +14,14 @@ module.exports = {
         gray: {
           30: '#7B7B7B',
         },
-        teal: {
-          50: '#006666',
+        brown: {
+          50: '#C3B091',
+        },
+        green: {
+          40: '#9D9D80',
+          50: '#9D9D80'
         }
+        
       },
       backgroundImage: {
       },
