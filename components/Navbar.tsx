@@ -44,7 +44,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div
-        className={`overflow-hidden height duration-300 ease-in-out	 ${
+        className={`md:hidden overflow-hidden height duration-300 ease-in-out	 ${
           showNavItems && "h-[170px]"
         } ${!showNavItems && "h-[0px]"}`}
       >
