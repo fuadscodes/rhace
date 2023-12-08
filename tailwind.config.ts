@@ -13,6 +13,8 @@ module.exports = {
           90: '#12171b',
         },
         gray: {
+          10: '#FAFAFC',
+          20: '#F4F4F9',
           30: '#7B7B7B',
         },
       },
