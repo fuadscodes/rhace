@@ -9,19 +9,12 @@ module.exports = {
     extend: {
       colors: {
         black: {
+          50: '#3B4656',
           90: '#12171b',
         },
         gray: {
           30: '#7B7B7B',
         },
-        brown: {
-          50: '#C3B091',
-        },
-        green: {
-          40: '#9D9D80',
-          50: '#9D9D80'
-        }
-        
       },
       backgroundImage: {
       },
