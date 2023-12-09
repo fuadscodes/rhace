@@ -14,7 +14,7 @@ export const Navbar = () => {
   return (
     <nav className="flex-col justify-between items-center md:sticky top-0 px-[40px] backdrop-blur-[15px] duration-500 shadow-lg text-bold">
       <div className="flex justify-between items-center h-[72px]">
-        <Link href="#hero">
+        <Link href="/">
           <Image
             src="/rhace-logo-dark.svg"
             alt="logo-dark"
