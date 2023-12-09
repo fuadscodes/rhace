@@ -33,7 +33,7 @@ export const Search: React.FC = () => {
         )}
         {loading && <div>Loading...</div>}
         {motorcycle && (
-          <Motorcycle data={motorcycle as MotorcycleProps["data"]} />
+          <Motorcycle data={motorcycle as unknown as MotorcycleProps["data"]} />
         )}
       </div>
     </div>
