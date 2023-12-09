@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { MOTORCYCLE_API } from "@/constants";
-import { MotorcycleProps } from "../../components/MotorcycleProps";
+import { MotorcycleProps } from "../types/MotorcycleProps";
 
 interface UseGetMotorcycleResult {
   motorcycle: MotorcycleProps | null;

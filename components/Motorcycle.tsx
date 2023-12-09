@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { MotorcycleProps } from "./MotorcycleProps";
+import { MotorcycleProps } from "../src/types/MotorcycleProps";
 
 export const Motorcycle: React.FC<MotorcycleProps> = ({ data }) => {
   if (!data) return null;

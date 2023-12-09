@@ -2,7 +2,7 @@
 import React from "react";
 import useGetMotorcycle from "../src/util/useGetMotorcycle";
 import { Motorcycle } from "./Motorcycle";
-import { MotorcycleProps } from "./MotorcycleProps";
+import { MotorcycleProps } from "../src/types/MotorcycleProps";
 
 export const Search: React.FC = () => {
   const { motorcycle, loading, fetchData } = useGetMotorcycle();
