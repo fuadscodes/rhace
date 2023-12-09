@@ -1,10 +1,17 @@
 "use client";
 import { useState } from "react";
 import { MOTORCYCLE_API } from "@/constants";
+import { MotorcycleProps } from "../../components/MotorcycleProps";
 
-const useGetMotorcycle = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [motorcycle, setMotorcycle] = useState(null);
+interface UseGetMotorcycleResult {
+  motorcycle: MotorcycleProps | null;
+  loading: boolean;
+  fetchData: () => Promise<void>;
+}
+
+const useGetMotorcycle = (): UseGetMotorcycleResult => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [motorcycle, setMotorcycle] = useState<MotorcycleProps | null>(null);
 
   const fetchData = async () => {
     setIsLoading(true);
@@ -14,13 +21,13 @@ const useGetMotorcycle = () => {
     };
 
     const options = {
-      method: "GET",
-      headers: headers,
+      method: "GET" as const,
+      headers: headers as Record<string, string>,
     };
 
     try {
       const res = await fetch(url, options);
-      const data = await res.json();
+      const data: MotorcycleProps[] = await res.json();
       setMotorcycle(data[0]);
     } catch (error) {
       console.error("Error fetching data:", error);
