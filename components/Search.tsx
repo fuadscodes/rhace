@@ -2,8 +2,9 @@
 import React from "react";
 import useGetMotorcycle from "../src/util/useGetMotorcycle";
 import { Motorcycle } from "./Motorcycle";
+import { MotorcycleProps } from "./MotorcycleProps";
 
-export const Search = () => {
+export const Search: React.FC = () => {
   const { motorcycle, loading, fetchData } = useGetMotorcycle();
 
   const handleOnClick = () => {
@@ -31,7 +32,9 @@ export const Search = () => {
           </div>
         )}
         {loading && <div>Loading...</div>}
-        <Motorcycle data={motorcycle} />
+        {motorcycle && (
+          <Motorcycle data={motorcycle as MotorcycleProps["data"]} />
+        )}
       </div>
     </div>
   );
