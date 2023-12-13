@@ -16,6 +16,8 @@ module.exports = {
           10: '#FAFAFC',
           20: '#F4F4F9',
           30: '#7B7B7B',
+          40: '#EFEFEF',
+          50: '#e2e2e2'
         },
       },
       backgroundImage: {

@@ -15,4 +15,7 @@ body {
   .btn_dark {
     @apply border-black-90 bg-black-90 px-8 py-3 text-white;
   }
+  .btn_light {
+    @apply bg-gray-40 hover:bg-gray-50 text-black-90;
+  }
 }

@@ -3,6 +3,7 @@ import React from "react";
 import useGetMotorcycle from "../src/util/useGetMotorcycle";
 import { Motorcycle } from "./Motorcycle";
 import { MotorcycleProps } from "../src/types/MotorcycleProps";
+import { Button } from "./Button";
 
 export const Search: React.FC = () => {
   const { motorcycle, loading, fetchData } = useGetMotorcycle();
@@ -22,14 +23,13 @@ export const Search: React.FC = () => {
 
       <div className="flex items-center justify-center">
         {!motorcycle && !loading && (
-          <div
-            className="cursor-pointer w-min"
+          <Button
+            title="START"
+            variant="btn_light"
             onClick={() => {
               handleOnClick();
             }}
-          >
-            Start
-          </div>
+          />
         )}
         {loading && <div>Loading...</div>}
         {motorcycle && (
