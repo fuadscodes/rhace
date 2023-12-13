@@ -8,7 +8,7 @@ import { Button } from "./Button";
 export const Search: React.FC = () => {
   const { motorcycle, loading, fetchData } = useGetMotorcycle();
 
-  const handleOnClick = () => {
+  const handleOnClick: React.MouseEventHandler<HTMLButtonElement> = () => {
     fetchData();
   };
 
@@ -24,11 +24,10 @@ export const Search: React.FC = () => {
       <div className="flex items-center justify-center">
         {!motorcycle && !loading && (
           <Button
+            type="button"
             title="START"
             variant="btn_light"
-            onClick={() => {
-              handleOnClick();
-            }}
+            onClick={handleOnClick}
           />
         )}
         {loading && <div>Loading...</div>}
