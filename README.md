@@ -2,7 +2,9 @@
 
 ## Getting Started 
 
-First, run the development server:
+Add NEXT_PUBLIC_API_NINJAS_KEY to .env file to use search.
+
+Run the development server:
 
 ```bash
 npm run dev
