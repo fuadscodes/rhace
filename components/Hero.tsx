@@ -5,7 +5,7 @@ export const Hero = () => {
     <section className="max-container padding-container flex-co xl:flex items-center xl:h-[calc(100vh-72px)] scroll-mt-[72px]">
       <Image
         priority={true}
-        src="/hero-image.avif"
+        src="/images/hero-image.avif"
         alt="motorcycle image"
         width="1550"
         height="300"
@@ -13,7 +13,7 @@ export const Hero = () => {
       />
       <Image
         priority={true}
-        src="/hero-image.avif"
+        src="/images/hero-image.avif"
         alt="motorcycle image"
         width="4500"
         height="1550"
