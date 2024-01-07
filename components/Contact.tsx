@@ -15,10 +15,18 @@ export const Contact = () => {
           {`I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!`}
         </p>
         <div className="flex flex-row gap-2">
-          <Link href="https://github.com/fuadscodes">
+          <Link
+            href="https://github.com/fuadscodes"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Image src={GithubIcon} alt="Github Icon" width={42} height={42} />
           </Link>
-          <Link href="https://www.linkedin.com/in/fuad-herac-a69311218/">
+          <Link
+            href="https://www.linkedin.com/in/fuad-herac-a69311218/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Image
               src={LinkedinIcon}
               alt="Linkedin Icon"
